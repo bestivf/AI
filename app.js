@@ -8,7 +8,6 @@ function start(){clearTimeout(watchdog);opening.classList.remove('finished');doc
 video.addEventListener('ended',finish);
 video.addEventListener('error',finish);
 video.addEventListener('timeupdate',()=>{if(Number.isFinite(video.duration))bar.style.width=`${video.currentTime/video.duration*100}%`;});
-document.getElementById('skip').addEventListener('click',finish);
 play.addEventListener('click',()=>{video.play().then(()=>{play.hidden=true;}).catch(finish);});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')finish();});
 if(matchMedia('(prefers-reduced-motion: reduce)').matches)finish();else start();
