@@ -10,3 +10,7 @@
 
 /* Keep the consultation button above the mobile browser toolbar. */
 @media(max-width:700px){.hero{padding-top:8px}.portrait{height:min(167.111vw,calc(100svh - 112px));aspect-ratio:auto}.portrait-column .primary{margin-top:8px}.portrait-label{bottom:8px}}
+
+.consultation-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.consultation-options a,.consultation-options button{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;padding:14px 8px;border-radius:10px;font-size:18px;font-weight:500;text-align:center;font-family:inherit}.consultation-text{background:#66d7f8;color:#031127;border:1px solid #66d7f8}.consultation-voice{background:#031127;color:#71ddff;border:1px solid #66d7f8}.consultation-options p{margin:8px 0 0;text-align:center;color:#b5c8da;font-size:14px;line-height:1.6}.microphone-note{text-align:center;margin:14px 0 0;color:#9cb2c7;font-size:13px;line-height:1.6}@media(max-width:700px){.portrait{height:min(167.111vw,calc(100svh - 174px))}.consultation-options{gap:10px;margin-top:8px}}
+
+.portrait-column .note{max-width:none;text-align:center;margin:8px 0 0;line-height:1.7}
